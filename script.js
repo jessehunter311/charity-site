@@ -18,10 +18,11 @@ function getRandomBrewery() {
 			 -<br />
 			 ${brew.street}<br />
 			 -<br />
-			 <a href='${brew.website_url}'>${brew.website_url}</a>`;
+			 <a target="_blank" rel="noopener noreferrer" href='${brew.website_url}'>Visit Site</a>`;
 			})
 			.catch((error) => {
 				console.error('Error:', error);    
 		});
 }
+
 
