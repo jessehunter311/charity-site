@@ -1,5 +1,3 @@
-
-
 body {
   background-image: url(breweries.jpg);
   background-position: top;
@@ -8,100 +6,172 @@ body {
   background-size: cover;
 }
 
+.mdl-elmts {
+  float: inline-end;
+  margin-bottom: 5px;
+}
+
 .results {
-    align-content: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  align-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .result {
-    margin-right: 12rem;
-    margin-left: 12rem;
-    font-family: 'Martel', serif;
-    font-size: 2rem;
-    padding: 2em;
-    text-align: center;
-    text-shadow: 2px 2px #201f1f;
-    color: rgba(240, 239, 243, 0.897);
-    background-color: #635b249f;
-    border-radius: 12px;
-    -webkit-background-clip: padding-box; 
-    -moz-background-clip:    padding; 
-    background-clip:         padding-box;
-    
+  margin-right: 12rem;
+  margin-left: 12rem;
+  font-family: 'Martel', serif;
+  font-size: 2rem;
+  padding: 2em;
+  text-align: center;
+  text-shadow: 2px 2px #201f1f;
+  color: rgba(240, 239, 243, 0.897);
+  background-color: #635b24dc;
+  border-radius: 12px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+
 }
 
 .buttons {
-    text-align: center;   
+  text-align: center;
 }
+
 button {
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    padding: .6rem 1rem;
-    margin-bottom: 2rem;
-    text-decoration: none;
-    text-shadow: 1px 2px #201f1f;
-    background: #413f32dc;
-    color: #e7e1e1da;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2rem;
-    line-height: 1;
-    cursor: pointer;
-    text-align: center;
-    transition: background 500ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  border-radius: 10px;
+  border: none;
+  padding: .6rem 1rem;
+  margin: 2rem 2rem 4rem 4rem;
+  text-decoration: none;
+  text-shadow: 1px 2px #201f1f;
+  background: #413f32dc;
+  color: #ffffffda;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 500ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 button:hover,
 button:focus {
-    background: #383730d5;
-    color: #ffffffe3;
+  background: #383730d5;
+  color: #ffffffe3;
 }
 
 button:focus {
-    outline: 0px solid rgb(104, 155, 113);
-    outline-offset: -10px;
-    
+  outline: 0px solid rgb(104, 155, 113);
+  outline-offset: -10px;
+
 }
 
 button:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 a {
-    font-size: 24px;
-    color: rgb(150, 187, 187);
+  font-size: 24px;
+  color: rgb(150, 187, 187);
 }
 
 .map {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
-@media only screen and (max-width: 768px) {
-   .result { 
-        margin-right: 4rem;
-        margin-left: 4rem;
-   }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+
+
+
+/*  ----------------Media Queries------------- */
+
+
+@media only screen and (max-width: 850px) {
+  .result {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    .result {
-        margin-right: .5rem;
-        margin-left: .5rem;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 1.5rem;
-    }
+  .result {
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
   }
+}
 
-  @media only screen and (max-width: 387px)  {
+@media only screen and (max-width: 387px) {
   button {
     margin-top: 0rem;
     font-size: 1.5rem;
-}
   }
+}

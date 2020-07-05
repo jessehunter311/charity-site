@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="C:\Users\311wa\Documents\CLproject\styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Breweries</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Breweries</title>
+  <link rel="stylesheet" href="C:\Users\311wa\Documents\CLproject\styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martel:wght@700&family=Permanent+Marker&family=Varela+Round&display=swap"
+    rel="stylesheet">
+
+
 </head>
+
 <body>
+  <div class="main-element">
     <div class="results">
-        <div class="buttons">
-            <button id="btn">Find Local Breweries</button>
-        </div>
-        <div id="result" class="result">
-            <p>
-            </p>
-        </div>
+      <div class="buttons">
+        <button id="btn">Find Local Breweries</button>
+      </div>
+      <div id="result" class="result">
+        <p>
+        </p>
+      </div>
     </div>
 
-    <div id="reservation" class="buttons">
-        <button id="btn">make a reservation</button>
+    <div id="myBtn" class="buttons">
+      <button id="btn" type="button">
+        make a reservation
+      </button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <img src="beer-mugs.jpg" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <div class="mdl-elmts">
+              <label for="uname"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="uname" required>
+            </div>
+            <div class="mdl-elmts">
+              <label for="psw"><b>Phone</b></label>
+              <input type="text" placeholder="Enter Phone Number" name="psw" required>
+            </div>
+            <div class="mdl-elmts">
+              <label for="psw"><b>Guest</b></label>
+              <input type="text" placeholder="Enter Number Of Guests" name="psw" required>
+            </div>
+            <div class="mdl-elmts">
+              <p>We will Email you with info on event times!</p>
+            </div>
+            <div class="mdl-elmts">
+              <button type="submit">Submit</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="close">Cancel</button>
+            </div>
+          </div>
+      </div>
+      </form>
+
     </div>
-
-
-
-    <script src="C:\Users\311wa\Documents\CLproject\script.js"></script>
-
-    
-    
+  </div>
+  <script src="C:\Users\311wa\Documents\CLproject\script.js"></script>
 </body>
-</html> 
+
+</html>
